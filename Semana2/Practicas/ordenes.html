@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cake Wars - Pedidos y Stock</title>
+
+        <link rel="stylesheet" href="./src/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <img
+                src="./assets/imgs/logo_pasteleria.png"
+                alt="Logo Cake Wars"
+                class="logo"
+            />
+
+            <div class="texto-encabezado">
+                <h1>Cake Wars - Stock y Pedidos</h1>
+            </div>
+
+        </header>
+
+        <!-- El pastelero necesita tener la información de la cantidad de sabores que le quedan para hacer los pasteles. -->
+        <section>
+            <h2>Sabores en Stock</h2>
+            <table>
+                <thead>
+                    <td><b>Sabor</b></td>
+                    <td><b>Cantidad</b></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>17</td>
+                    </tr>
+
+                    <tr>
+                        <td>Choco-vainilla</td>
+                        <td>18</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cajeta</td>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <td>Durazno</td>
+                        <td>14</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fresa</td>
+                        <td>13</td>
+                    </tr>
+
+                    <tr>
+                        <td>Queso con Zarzamora</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- El pastelero necesita tener la información de la cantidad de adornos que le quedan para hacer los pasteles. -->
+        <section>
+            <h2>Adornos en Stock</h2>
+
+            <table>
+                <thead>
+                    <td><b>Adorno</b></td>
+                    <td><b>Cantidad</b></td>
+                    <td><b>Unidades</b></td>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Fondant</td>
+                        <td>15</td>
+                        <td>kg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Betún</td>
+                        <td>7</td>
+                        <td>kg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Chantilly</td>
+                        <td>10</td>
+                        <td>kg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Merengue</td>
+                        <td>12</td>
+                        <td>kg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grajeas</td>
+                        <td>3</td>
+                        <td>kg</td>
+                    </tr>
+
+                    <tr>
+                        <td>Placa decorativa</td>
+                        <td>35</td>
+                        <td>unidades</td>
+                    </tr>
+
+                    <tr>
+                        <td>Velas</td>
+                        <td>250</td>
+                        <td>piezas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- El pastelero necesita una tabla donde aparezcan los pedidos que se han realizado con los datos del formulario. -->
+        <h2>Pedidos</h2>
+
+        <table>
+            <tr>
+                <td colspan="3">Datos de Contacto</td>
+                <td colspan="6">Sabor del pastel</td>
+                <td colspan="7">Adornos del pastel</td>
+                <td colspan="1">Adicional</td>
+            </tr>
+
+            <tr>
+                <td>Nombre</td>
+                <td>Número de celular</td>
+                <td>Correo electrónico</td>
+
+                <td>Chocolate</td>
+                <td>Choco-vainilla</td>
+                <td>Cajeta</td>
+                <td>Durazno</td>
+                <td>Fresa</td>
+                <td>Queso con Zarzamora</td>
+
+                <td>Fondant</td>
+                <td>Betún</td>
+                <td>Chantilly</td>
+                <td>Merengue</td>
+                <td>Grajeas</td>
+                <td>Placa decorativa</td>
+                <td>Velas</td>
+
+                <td>
+                    <p>Descripción general del pastel</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nick van de Wall</td>
+                <td>1122334455</td>
+                <td>nickwall@mail.com</td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td>Pastel redondo para 35 personas</td>
+            </tr>
+            <tr>
+                <td>Daan Romers</td>
+                <td>2222334455</td>
+                <td>daan@mail.com</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+                <td>Pastel rectangular para 100 personas</td>
+            </tr>
+
+            <tr>
+                <td>Nick Rotteveel</td>
+                <td>7788994455</td>
+                <td>nickrottveel@mail.com</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+                <td>Pastel redondo para 60 personas</td>
+            </tr>
+        </table>
+    </body>
+</html>

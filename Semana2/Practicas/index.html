@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta
+            name="description"
+            content="Title: Cake Wars. Description: Pasteles de otra galaxia a tu mesa"
+        />
+        <title>Cake Wars Pastelería</title>
+
+        <link rel="stylesheet" href="./src/css/style.css">
+    </head>
+    <body>
+        <header>
+            <img
+                src="./assets/imgs/logo_pasteleria.png"
+                alt="Logo Cake Wars"
+                class="logo"
+            />
+
+            <div class="texto-encabezado">
+                <h1>Cake Wars - Pastelería</h1>
+                <p>Pasteles de otra galaxia a tu mesa.</p>
+            </div>
+
+        </header>
+
+        <!-- El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno. -->
+        <section>
+            <h2>Sabores de Pasteles</h2>
+            <table>
+                <thead>
+                    <td><b>Sabor</b></td>
+                    <td><b>Precio</b></td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chocolate</td>
+                        <td>$249.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Choco-vainilla</td>
+                        <td>$299.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cajeta</td>
+                        <td>$274.50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Durazno</td>
+                        <td>$349.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fresa</td>
+                        <td>$299.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Queso con Zarzamora</td>
+                        <td>$349.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno. -->
+        <section>
+            <h2>Adornos de pasteles</h2>
+            <table>
+                <thead>
+                    <td><b>Adorno</b></td>
+                    <td><b>Precio</b></td>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Fondant</td>
+                        <td>$350.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Betún</td>
+                        <td>$150.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Chantilly</td>
+                        <td>$150.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Merengue</td>
+                        <td>$150.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grajeas</td>
+                        <td>$150.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Placa decorativa</td>
+                        <td>$75.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Velas</td>
+                        <td>$15.00 / pza</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención. -->
+        <section>
+            <h2>Contáctanos:</h2>
+            <p>Dirección: 3 Norte #154 Col. Centro, Puebla, Puebla.</p>
+            <p>Teléfono: 2211337788</p>
+            <p>Horario: Lunes - Sábado: 11:00-19:00</p>
+        </section>
+
+        <!-- El cliente de la pastelería necesita poner en un formulario su pedido. -->
+        <h2>¡Ordena aquí!</h2>
+        <form action="./ordenes.html">
+            <h3>Datos del Cliente</h3>
+
+            <!-- El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos. -->
+            <label for="nombreCliente">Nombre: </label>
+            <input
+                type="text"
+                id="nombreCliente"
+                name="nombreCliente"
+                placeholder="Tu nombre completo"
+                required
+            />
+
+            <br />
+
+            <label for="telefonoCliente">Número de celular: </label>
+            <input
+                type="tel"
+                id="telefonoCliente"
+                name="telefonoCliente"
+                placeholder="Tu número de teléfono"
+                required
+            />
+
+            <br />
+
+            <label for="correoCliente">Correo electrónico: </label>
+            <input
+                type="email"
+                id="correoCliente"
+                name="correoCliente"
+                placeholder="Tu correo electrónico"
+                required
+            />
+
+            <br /><br />
+            <h3>Datos del pastel</h3>
+
+            <!-- El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias. -->
+            <p>Selecciona el/los sabor(es) de tu pastel:</p>
+            <input
+                type="checkbox"
+                name="sabor"
+                value="saborChocolate"
+                id="saborChocolate"
+            />
+            <label for="saborChocolate">Chocolate</label>
+
+            <input
+                type="checkbox"
+                name="sabor"
+                value="saborChocoVainilla"
+                id="saborChocoVainilla"
+            />
+            <label for="saborChocoVainilla">Choco-vainilla</label>
+
+            <input
+                type="checkbox"
+                name="sabor"
+                value="saborCajeta"
+                id="saborCajeta"
+            />
+            <label for="saborCajeta">Cajeta</label>
+
+            <input
+                type="checkbox"
+                name="sabor"
+                value="saborDurazno"
+                id="saborDurazno"
+            />
+            <label for="saborDurazno">Durazno</label>
+
+            <input
+                type="checkbox"
+                name="sabor"
+                value="saborFresa"
+                id="saborFresa"
+            />
+            <label for="saborFresa">Fresa</label>
+
+            <input
+                type="checkbox"
+                name="sabor"
+                value="saborQuesoConZarzamora"
+                id="saborQuesoConZarzamora"
+            />
+            <label for="saborQuesoConZarzamora">Queso con Zarzamora</label>
+
+            <!-- El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias. -->
+            <p>Selecciona el/los adorno(s) para tu pastel:</p>
+            <input
+                type="checkbox"
+                name="adorno"
+                value="adornoFondant"
+                id="adornoFondant"
+            />
+            <label for="adornoFondant">Fondant</label>
+
+            <input
+                type="checkbox"
+                name="adorno"
+                value="adornoBetun"
+                id="adornoBetun"
+            />
+            <label for="adornoBetun">Betún</label>
+
+            <input
+                type="checkbox"
+                name="adorno"
+                value="adornoChantilly"
+                id="adornoChantilly"
+            />
+            <label for="adornoChantilly">Chantilly</label>
+
+            <input
+                type="checkbox"
+                name="adorno"
+                value="adornoMerengue"
+                id="adornoMerengue"
+            />
+            <label for="adornoMerengue">Merengue</label>
+
+            <input
+                type="checkbox"
+                name="adorno"
+                value="adornoGrajeas"
+                id="adornoGrajeas"
+            />
+            <label for="adornoGrajeas">Grajeas</label>
+
+            <input
+                type="checkbox"
+                name="adorno"
+                value="adornoPlacaDecorativa"
+                id="adornoPlacaDecorativa"
+            />
+            <label for="adornoPlacaDecorativa">Placa decorativa</label>
+
+            <input
+                type="checkbox"
+                name="adorno"
+                value="adornoVelas"
+                id="adornoVelas"
+            />
+            <label for="adornoVelas">Velas</label>
+
+            <br /><br />
+
+            <label for="descripcionPastel"
+                >Descripción general del pastel: </label
+            ><br />
+            <textarea
+                rows="5"
+                cols="35"
+                id="descripcionPastel"
+                name="descripcionPastel"
+                placeholder="Escribe una descripción general de cómo quieres tu pastel, incluyendo la cantidad de personas para las que lo deseas y detalles adicionales en caso de ser necesarios."
+            ></textarea>
+
+            <br /><br />
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <footer>
+            <p>Cake Wars. Contacto: 2211337788</p>
+        </footer>
+    </body>
+</html>
