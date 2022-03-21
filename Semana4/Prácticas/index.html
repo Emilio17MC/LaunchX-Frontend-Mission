@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <div class="flex h-screen mx-auto px-6">
+            <div class="m-auto">
+                <h1 class="text-3xl font-bold text-center mb-8">Pokedex</h1>
+
+                <div class="w-full w-11/12 flex">
+                    <div class="w-full h-auto bg-gray-100 block w-1/2 bg-cover rounded-l-lg p-48" id="pokeImg" style="
+                                background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/640px-Pok%C3%A9_Ball_icon.svg.png');
+                            "></div>
+
+                    <div class="w-1/2 bg-white p-5 rounded-l-none">
+                        <div class="px-8 mb-4">
+                            <h3 class="pt-4 mb-2 text-2xl" id="pokeName_lbl">
+                                Name:
+                            </h3>
+
+                            <p class="text-gray-700" id="pokeID_lbl">ID:</p>
+                            <p class="text-gray-700" id="pokeSize_lbl">
+                                Size:
+                            </p>
+                            <p class="text-gray-700" id="pokeWeight_lbl">
+                                Weight:
+                            </p>
+
+                            <br />
+                        </div>
+
+                        <div>
+                            <p class="text-gray-700" id="pokeHealth_lbl">
+                                Health:
+                            </p>
+                            <div class="w-full bg-gray-200 h-1">
+                                <div class="bg-blue-600 h-1" style="width: 0%" id="pokeHealth_bar"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-700" id="pokeAttack_lbl">
+                                Attack:
+                            </p>
+                            <div class="w-full bg-gray-200 h-1">
+                                <div class="bg-blue-600 h-1" style="width: 0%" id="pokeAttack_bar"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-700" id="pokeDeffense_lbl">
+                                Defense:
+                            </p>
+                            <div class="w-full bg-gray-200 h-1">
+                                <div class="bg-blue-600 h-1" style="width: 0%" id="pokeDeffense_bar"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-700" id="pokeSpecialAttack_lbl">
+                                Special Attack:
+                            </p>
+                            <div class="w-full bg-gray-200 h-1">
+                                <div class="bg-blue-600 h-1" style="width: 0%" id="pokeSpecialHealth_bar"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-700" id="pokeSpecialDeffense_lbl">
+                                Special Defense:
+                            </p>
+                            <div class="w-full bg-gray-200 h-1">
+                                <div class="bg-blue-600 h-1" style="width: 0%" id="pokeSpecialDeffense_bar"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-700" id="pokeSpeed_lbl">
+                                Speed:
+                            </p>
+                            <div class="w-full bg-gray-200 h-1">
+                                <div class="bg-blue-600 h-1" style="width: 0%" id="pokeSpeed_bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white absolute bottom-0 rounded-lg p-4 mx-8 w-3/8 m-4 shadow-md">
+                        <div class="columns-2 m-4">
+                            <div>
+                                <label class="block mb-2 text-sm font-bold text-gray-700" for="email">
+                                    Pokemon:
+                                </label>
+                                <input
+                                    class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                    id="pokeName" name="pokeName" placeholder="Enter ID / Name..." />
+                            </div>
+                            <div>
+                                <div class="items-center flex">
+                                    <button onclick="fetchPokemon();"
+                                        class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white font-bold ml-2 mt-4 ml-8 px-8 py-3 text-sm rounded tracking-wider">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script src="./js/pokedex.js"></script>
+    </footer>
+</body>
+
+</html>
